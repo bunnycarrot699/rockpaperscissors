@@ -44,12 +44,12 @@ if(playerSelection==computerSelection)//check if it is a draw
 console.log('It\'s a draw');
 else{
     if(playRound(playerSelection, computerSelection))
-{console.log('You Won! '+ playerSelection + ' beats ' + computerSelection)
+{console.log('You Won! '+ playerSelection.charAt(0).toUpperCase() + playerSelection.substring(1) + ' beats ' + computerSelection+'.')
 pwon++;
 
 }
 else if(!playRound(playerSelection, computerSelection))
-{console.log('You Lose! '+ computerSelection + ' beats ' + playerSelection)
+{console.log('You Lose! '+ computerSelection.charAt(0).toUpperCase() + computerSelection.substring(1)+ ' beats ' + playerSelection+'.')
     cwon++;
 }
 
