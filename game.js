@@ -29,7 +29,22 @@ function playRound(playerSelection, computerSelection) {//Create function that g
     }
   }
 
-  
+  const rock=document.querySelector('#rock');
+  const paper=document.querySelector('#paper');
+  const scis=document.querySelector('#scis');
+
+  rock.addEventListener('click', ()=>{
+    console.log(playRound('rock',getComputerChoice()));
+})
+
+  paper.addEventListener('click', ()=>{
+    console.log(playRound('paper',getComputerChoice()));
+})
+
+  scis.addEventListener('click', ()=>{
+    console.log(playRound('scissors',getComputerChoice()));
+})
+
   //console.log(computerSelection);
   //console.log(playRound(playerSelection, computerSelection));
 function game(){//create function that plays game five times in a row 
@@ -60,4 +75,4 @@ console.log("Congratulations! You won the game!")
 else
 console.log("You lost the game...")
 }
-game();
+//game();
